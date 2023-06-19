@@ -22,6 +22,7 @@ setInterval( () => {
     if (digit1 === 10){
         digit1 = 0;
         digit2++;
+        // alert(`Han pasado ${digit2} segundos`)
     } if (digit2 === 10){
         digit2 = 0;
         digit3++
@@ -41,8 +42,6 @@ setInterval( () => {
 6
     //render your react application
     ReactDOM.render(<Home digit1={digit1} digit2={digit2} digit3={digit3} digit4={digit4} digit5={digit5} digit6={digit6} />, document.querySelector("#app"));
-
-
 }, 1000)
 
 
